@@ -3,9 +3,9 @@
 This boilerplate was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and adds the following packages on top of `create-react-app`.
 
 - Code Format:
-  `@trivago/prettier-plugin-sort-imports eslint-config-vandre husky lint-staged prettier`
+  `@trivago/prettier-plugin-sort-imports husky lint-staged prettier`
 - CSS-in-JS: `@types/styled-components styled-components jest-styled-components `
-- GraphQL: `@apollo-client graphql / graphl.macro`
+- GraphQL: `@apollo-client graphql graphl.macro`
 - Router: `react-router-dom`
 
 ## Available Scripts
