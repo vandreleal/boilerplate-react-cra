@@ -11,7 +11,7 @@ import reportWebVitals from "./reportWebVitals"
 import GlobalStyle from "./styles/global"
 
 const client = new ApolloClient({
-  uri: `${process.env.API_URL}/graphql`,
+  uri: `${process.env.API_URL}`,
   cache: new InMemoryCache({}),
 })
 
