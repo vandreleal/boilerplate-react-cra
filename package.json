@@ -1,5 +1,6 @@
 {
   "name": "boilerplate-react",
+  "homepage": "https://vandreleal.github.io/boilerplate-react",
   "version": "0.1.0",
   "private": true,
   "scripts": {
