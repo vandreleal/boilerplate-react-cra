@@ -3,7 +3,10 @@ import { BrowserRouter } from "react-router-dom"
 
 import { ApolloClient, InMemoryCache } from "@apollo/client"
 import { ApolloProvider } from "@apollo/client/react"
+import { ThemeProvider } from "styled-components"
+
 import { GlobalStyle } from "styles/global"
+import { lightTheme } from "styles/theme"
 
 const client = new ApolloClient({
   uri: `${process.env.API_URL}`,
@@ -23,10 +26,12 @@ export const parameters = {
 export const decorators = [
   Story => (
     <ApolloProvider client={client}>
-      <GlobalStyle />
-      <BrowserRouter>
-        <Story />
-      </BrowserRouter>
+      <ThemeProvider theme={lightTheme}>
+        <GlobalStyle />
+        <BrowserRouter>
+          <Story />
+        </BrowserRouter>
+      </ThemeProvider>
     </ApolloProvider>
   ),
 ]
