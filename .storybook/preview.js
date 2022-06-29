@@ -3,7 +3,7 @@ import { BrowserRouter } from "react-router-dom"
 
 import { ApolloClient, InMemoryCache } from "@apollo/client"
 import { ApolloProvider } from "@apollo/client/react"
-import GlobalStyle from "styles/global"
+import { GlobalStyle } from "styles/global"
 
 const client = new ApolloClient({
   uri: `${process.env.API_URL}`,

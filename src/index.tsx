@@ -1,14 +1,12 @@
 import React from "react"
 import ReactDOM from "react-dom/client"
-import { BrowserRouter } from "react-router-dom"
+import { BrowserRouter, Route, Routes } from "react-router-dom"
 
 import { ApolloClient, InMemoryCache } from "@apollo/client"
 import { ApolloProvider } from "@apollo/client/react"
-import { ThemeProvider } from "styled-components"
 
 import App from "./App"
 import reportWebVitals from "./reportWebVitals"
-import GlobalStyle from "./styles/global"
 
 const client = new ApolloClient({
   uri: `${process.env.API_URL}`,
@@ -17,18 +15,14 @@ const client = new ApolloClient({
 
 const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement)
 
-// Define what main theme will look like
-const theme = {}
-
 root.render(
   <React.StrictMode>
     <ApolloProvider client={client}>
-      <ThemeProvider theme={theme}>
-        <GlobalStyle />
-        <BrowserRouter>
-          <App />
-        </BrowserRouter>
-      </ThemeProvider>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
+        <Routes>
+          <Route element={<App />} path="*" />
+        </Routes>
+      </BrowserRouter>
     </ApolloProvider>
   </React.StrictMode>
 )

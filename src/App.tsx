@@ -1,24 +1,30 @@
-import "./App.css"
-import logo from "./logo.svg"
+import { FC, useState } from "react"
+import { Route, Routes } from "react-router-dom"
 
-const App = () => {
+import { ThemeProvider } from "styled-components"
+
+import { Home } from "pages/home"
+
+import { GlobalStyle } from "styles/global"
+import { darkTheme, lightTheme } from "styles/theme"
+
+const App: FC = () => {
+  const [isDarkTheme, setIsDarkTheme] = useState(false)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img alt="logo" className="App-logo" src={logo} />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
+      <GlobalStyle />
+      <Routes>
+        <Route element={<Home />} path="/" />
+      </Routes>
+      <button
+        id="themeToggle"
+        type="button"
+        onClick={() => setIsDarkTheme(!isDarkTheme)}
+      >
+        Change to {isDarkTheme ? "light" : "dark"} mode
+      </button>
+    </ThemeProvider>
   )
 }
 
