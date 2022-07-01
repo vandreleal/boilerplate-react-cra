@@ -1,8 +1,16 @@
 {
   "name": "boilerplate-react",
+  "version": "1.0.0",
+  "author": "Vandré Leal",
+  "license": "MIT",
   "homepage": "https://vandreleal.github.io/boilerplate-react",
-  "version": "0.1.0",
-  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vandreleal/boilerplate-react.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vandreleal/boilerplate-react/issues"
+  },
   "scripts": {
     "prepare": "husky install",
     "start": "react-scripts start",
@@ -37,6 +45,7 @@
     "web-vitals": "2.1.4"
   },
   "devDependencies": {
+    "@storybook/addon-a11y": "6.5.9",
     "@storybook/addon-actions": "6.5.9",
     "@storybook/addon-essentials": "6.5.9",
     "@storybook/addon-interactions": "6.5.9",
@@ -54,7 +63,6 @@
     "jest-styled-components": "7.0.8",
     "lint-staged": "13.0.3",
     "prettier": "2.7.1",
-    "prop-types": "15.8.1",
     "webpack": "5.73.0"
   },
   "lint-staged": {
