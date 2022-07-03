@@ -6,7 +6,7 @@ import { ApolloProvider } from "@apollo/client/react"
 import { ThemeProvider } from "styled-components"
 
 import { GlobalStyle } from "styles/global"
-import { lightTheme } from "styles/theme"
+import { light } from "styles/theme"
 
 const client = new ApolloClient({
   uri: `${process.env.API_URL}`,
@@ -26,7 +26,7 @@ export const parameters = {
 export const decorators = [
   Story => (
     <ApolloProvider client={client}>
-      <ThemeProvider theme={lightTheme}>
+      <ThemeProvider theme={light}>
         <GlobalStyle />
         <BrowserRouter>
           <Story />

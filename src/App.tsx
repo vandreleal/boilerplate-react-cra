@@ -6,13 +6,13 @@ import { ThemeProvider } from "styled-components"
 import { Home } from "pages/home"
 
 import { GlobalStyle } from "styles/global"
-import { darkTheme, lightTheme } from "styles/theme"
+import { dark, light } from "styles/theme"
 
 const App: FC = () => {
   const [isDarkTheme, setIsDarkTheme] = useState(false)
 
   return (
-    <ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
+    <ThemeProvider theme={isDarkTheme ? dark : light}>
       <GlobalStyle />
       <Routes>
         <Route element={<Home />} path="/" />

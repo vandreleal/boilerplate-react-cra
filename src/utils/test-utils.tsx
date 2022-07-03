@@ -7,7 +7,7 @@ import { render, RenderOptions } from "@testing-library/react"
 import { ThemeProvider } from "styled-components"
 
 import { GlobalStyle } from "styles/global"
-import { lightTheme } from "styles/theme"
+import { light } from "styles/theme"
 
 const client = new ApolloClient({
   uri: `${process.env.API_URL}`,
@@ -18,7 +18,7 @@ const AllTheProviders: FC<{ children: ReactNode }> = ({ children }) => {
   return (
     <ApolloProvider client={client}>
       <BrowserRouter basename={process.env.PUBLIC_URL}>
-        <ThemeProvider theme={lightTheme}>
+        <ThemeProvider theme={light}>
           <GlobalStyle />
           {children}
         </ThemeProvider>
