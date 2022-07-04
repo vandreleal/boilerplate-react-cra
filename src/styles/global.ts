@@ -21,10 +21,4 @@ export const GlobalStyle = createGlobalStyle`
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
       monospace;
   }
-
-  #themeToggle {
-    position: fixed;
-    bottom: 0.5rem;
-    right: 0.5rem;
-  }
 `

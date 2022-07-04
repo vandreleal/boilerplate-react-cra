@@ -18,7 +18,11 @@ const App: FC = () => {
         <Route element={<Home />} path="/" />
       </Routes>
       <button
-        id="themeToggle"
+        style={{
+          position: "fixed",
+          bottom: "1rem",
+          right: "1rem",
+        }}
         type="button"
         onClick={() => setIsDarkTheme(!isDarkTheme)}
       >
