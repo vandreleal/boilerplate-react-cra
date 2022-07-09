@@ -8,7 +8,10 @@ export const Container = styled.div`
   height: 100%;
 `
 
-export const Title = styled.h1`
-  margin: 0;
-  text-align: center;
+export const Table = styled.table`
+  min-width: min(100%, 360px);
+
+  td:nth-of-type(2) {
+    text-align: right;
+  }
 `
