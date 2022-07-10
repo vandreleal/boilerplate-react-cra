@@ -1,17 +1,16 @@
 import styled from "styled-components"
 
 export const Container = styled.div`
-  display: flex;
-  flex-direction: column;
+  display: grid;
   align-items: center;
   justify-content: center;
-  height: 100%;
+  padding: 1rem 1rem 3rem;
 `
 
 export const Table = styled.table`
   min-width: min(100%, 360px);
 
-  td:nth-of-type(2) {
+  td:last-of-type {
     text-align: right;
   }
 `

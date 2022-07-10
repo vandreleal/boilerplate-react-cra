@@ -1,7 +1,7 @@
 import { createGlobalStyle } from "styled-components"
 
 export const GlobalStyle = createGlobalStyle`
-  html, body, #root {
+  html, body {
     width: 100%;
     height: 100%;
   }
@@ -15,6 +15,12 @@ export const GlobalStyle = createGlobalStyle`
       sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+  }
+
+  #root {
+    display: grid;
+    align-items: center;
+    min-height: 100%;
   }
 
   code {
