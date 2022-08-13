@@ -33,7 +33,7 @@
     "@types/node": "18.7.2",
     "@types/react": "18.0.15",
     "@types/react-dom": "18.0.6",
-    "@types/styled-components": "5.1.25",
+    "@types/styled-components": "5.1.26",
     "graphql": "16.5.0",
     "graphql.macro": "1.4.2",
     "react": "18.2.0",
