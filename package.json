@@ -42,7 +42,7 @@
     "react-scripts": "5.0.1",
     "styled-components": "5.3.5",
     "typescript": "4.8.2",
-    "web-vitals": "2.1.4"
+    "web-vitals": "3.0.0"
   },
   "devDependencies": {
     "@storybook/addon-a11y": "6.5.10",
