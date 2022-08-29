@@ -1,0 +1,26 @@
+{
+  "extends": [
+    "plugin:testing-library/react",
+    "plugin:@typescript-eslint/recommended",
+    "react-app",
+    "react-app/jest",
+    "plugin:jsx-a11y/recommended",
+    "plugin:prettier/recommended",
+    "vandre"
+  ],
+  "plugins": [
+    "testing-library",
+    "jest-dom",
+    "jsx-a11y",
+    "@typescript-eslint",
+    "prettier"
+  ],
+  "overrides": [
+    {
+      "files": ["**/*.stories.*"],
+      "rules": {
+        "import/no-anonymous-default-export": "off"
+      }
+    }
+  ]
+}
