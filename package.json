@@ -69,9 +69,6 @@
     "prettier": "2.7.1",
     "webpack": "5.74.0"
   },
-  "lint-staged": {
-    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": "prettier --write"
-  },
   "browserslist": {
     "production": [
       ">0.2%",
