@@ -4,6 +4,5 @@ import { Home } from "./Home"
 
 test("renders boilerplate", () => {
   render(<Home />)
-  const linkElement = screen.getByText(/boilerplate/i)
-  expect(linkElement).toBeInTheDocument()
+  expect(screen.getByText(/boilerplate/i)).toBeInTheDocument()
 })
