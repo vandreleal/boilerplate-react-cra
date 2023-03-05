@@ -30,7 +30,7 @@
     "graphql.macro": "1.4.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-router-dom": "6.8.1",
+    "react-router-dom": "6.8.2",
     "react-scripts": "5.0.1",
     "web-vitals": "3.1.1"
   },
@@ -51,7 +51,7 @@
     "@testing-library/user-event": "14.4.3",
     "@trivago/prettier-plugin-sort-imports": "4.1.1",
     "@types/jest": "29.4.0",
-    "@types/node": "18.14.1",
+    "@types/node": "18.14.6",
     "@types/react": "18.0.28",
     "@types/react-dom": "18.0.11",
     "@types/styled-components": "5.1.26",
@@ -66,7 +66,7 @@
     "lint-staged": "13.1.2",
     "msw": "1.1.0",
     "prettier": "2.8.4",
-    "styled-components": "5.3.6",
+    "styled-components": "5.3.8",
     "typescript": "4.9.5",
     "webpack": "5.75.0"
   },
