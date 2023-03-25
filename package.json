@@ -56,7 +56,7 @@
     "@types/react-dom": "18.0.11",
     "@types/styled-components": "5.1.26",
     "babel-plugin-named-exports-order": "0.0.2",
-    "eslint-config-prettier": "8.6.0",
+    "eslint-config-prettier": "8.8.0",
     "eslint-config-vandre": "1.1.0",
     "eslint-plugin-jest-dom": "4.0.3",
     "eslint-plugin-prettier": "4.2.1",
