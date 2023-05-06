@@ -5,6 +5,7 @@
     "plugin:@typescript-eslint/recommended",
     "plugin:jsx-a11y/recommended",
     "plugin:prettier/recommended",
+    "plugin:storybook/recommended",
     "vandre"
   ],
   "plugins": [
@@ -23,13 +24,12 @@
       ],
       "extends": ["plugin:testing-library/react"]
     },
-    // Only uses Storybook lint rules in stories
     {
       "files": ["*.stories.@(ts|tsx|js|jsx|mjs|cjs)"],
       "rules": {
-        "import/no-anonymous-default-export": "off"
-      },
-      "extends": ["plugin:storybook/recommended"]
+        "import/no-anonymous-default-export": "off",
+        "prettier/prettier": "off"
+      }
     }
   ]
 }
