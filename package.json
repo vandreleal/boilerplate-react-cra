@@ -64,7 +64,7 @@
     "msw": "1.2.1",
     "prettier": "2.8.8",
     "storybook": "7.0.12",
-    "styled-components": "5.3.10",
+    "styled-components": "5.3.11",
     "typescript": "5.0.4",
     "webpack": "5.83.1"
   },
