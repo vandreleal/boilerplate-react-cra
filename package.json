@@ -63,7 +63,7 @@
     "lint-staged": "13.2.2",
     "msw": "1.2.1",
     "prettier": "2.8.8",
-    "storybook": "7.0.12",
+    "storybook": "7.0.18",
     "styled-components": "5.3.10",
     "typescript": "5.0.4",
     "webpack": "5.83.1"
