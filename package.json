@@ -25,7 +25,7 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
-    "@apollo/client": "3.7.14",
+    "@apollo/client": "3.7.15",
     "graphql": "16.6.0",
     "graphql.macro": "1.4.2",
     "react": "18.2.0",
