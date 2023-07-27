@@ -1,15 +1,15 @@
 {
-  "name": "boilerplate-react",
+  "name": "boilerplate-react-cra",
   "version": "1.0.0",
   "author": "Vandré Leal",
   "license": "MIT",
-  "homepage": "https://vandreleal.github.io/boilerplate-react",
+  "homepage": "https://vandreleal.github.io/boilerplate-react-cra",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vandreleal/boilerplate-react.git"
+    "url": "git+https://github.com/vandreleal/boilerplate-react-cra.git"
   },
   "bugs": {
-    "url": "https://github.com/vandreleal/boilerplate-react/issues"
+    "url": "https://github.com/vandreleal/boilerplate-react-cra/issues"
   },
   "scripts": {
     "prepare": "husky install",
