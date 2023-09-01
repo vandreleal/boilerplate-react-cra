@@ -39,7 +39,7 @@
     "@storybook/addon-a11y": "7.3.2",
     "@storybook/addon-essentials": "7.3.2",
     "@storybook/addon-interactions": "7.3.2",
-    "@storybook/addon-links": "7.3.2",
+    "@storybook/addon-links": "7.4.0",
     "@storybook/blocks": "7.3.2",
     "@storybook/preset-create-react-app": "7.3.2",
     "@storybook/react": "7.3.2",
